@@ -1,38 +1,82 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0; 
+  padding: 0;
+}
+
+.navbar {
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.footer {
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+  color: white;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+}
+
+.content-container {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.tab-standings {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
   color: white;
+  height: 50px;
+  border-right: 5px solid #cccc;
 }
 
-.App-link {
-  color: #61dafb;
+.tab-players {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  height: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+select {
+  padding: 10px; 
+  font-size: 19px;
+}
+
+.standing-results {
+  text-align: center;
+}
+
+.standing-info img {
+  width: 30px;
+}
+
+.standing-info {
+  margin: 2%;
 }
